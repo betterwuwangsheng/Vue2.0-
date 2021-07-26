@@ -1,18 +1,18 @@
 <template>
-  <div id='app'>
+  <div id="app">
     food 项目
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'App',
-  }
+export default {
+  name: 'App',
+};
 </script>
 
-<style lang='scss'>
-  #app{
-    color:#ff0000;
-  }
+<style lang="scss">
+#app {
+  color: #ff0000;
+}
 </style>

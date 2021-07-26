@@ -4,15 +4,14 @@ import VueRouter from 'vue-router';
 //引入 Login 组件
 import Login from '../project/common/account/Login';
 
-
 // 使用模块化机制编程，导入 VueRouter，要调用 Vue.use(VueRouter)
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/login',
-    component: Login
-  }
+    component: Login,
+  },
 ];
 
 // 创建路由实例对象
