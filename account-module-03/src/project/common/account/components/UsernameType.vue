@@ -1,11 +1,11 @@
 <template>
   <ul class="username-type-tag">
     <li>
-      <i class="icon icon-size-18 icon-mb--4"></i>
+      <i class="icon-phone icon-size-18 icon-mb--4"></i>
       手机
     </li>
     <li class="username-type-tag">
-      <i class="icon icon-size-18 icon-mb--4"></i>
+      <i class="icon-email icon-size-18 icon-mb--4"></i>
       邮箱
     </li>
   </ul>
