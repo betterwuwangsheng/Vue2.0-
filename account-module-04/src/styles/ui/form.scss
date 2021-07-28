@@ -1,0 +1,24 @@
+//  form 样式
+.form-item {
+  margin-bottom: 16px;
+}
+
+.form-body {
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 13.5px 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ffffff;
+
+  // 引用父级选择器"&"
+  // 相当于 .form-body.active
+  &.active {
+    border-color: #ff7f56;
+  }
+
+  .van-cell {
+    padding: 0;
+    background-color: none;
+  }
+}

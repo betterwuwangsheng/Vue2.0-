@@ -1,0 +1,37 @@
+// button 样式
+.button-ui {
+  //内联块级元素
+  display: inline-block;
+  border: none;
+  background: none;
+  padding: 0 20px;
+  span {
+    display: block;
+  }
+}
+
+// 圆角
+.button-ui-round {
+  border-radius: 100px;
+}
+
+// 占据本行
+.button-ui-block {
+  display: block;
+  width: 100%;
+}
+// 主色调
+.button-ui-main {
+  background-color: #ff7f56;
+  span {
+    color: #ffffff;
+  }
+}
+
+// 定义大尺寸
+.button-ui-large {
+  span {
+    padding: 17px 0;
+    font-size: 16px;
+  }
+}
