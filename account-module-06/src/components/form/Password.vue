@@ -1,5 +1,6 @@
 <template>
   <div class="form-item">
+    <label v-if="label" style="color: #fff">{{ labelText }}</label>
     <div class="form-body" :class="{ active: active }">
       <div class="pr">
         <!-- @focus="" 获取焦点时事件 -->
@@ -20,7 +21,8 @@
           <i class="icon" @click="toggleType">
             <svg-icon
               :icon-class="value_type === 'password' ? 'eyeOff' : 'eye'"
-              class-name="svg-icon-24 svg-icon-password">
+              class-name="svg-icon-24 svg-icon-password"
+            >
             </svg-icon>
           </i>
         </div>
@@ -31,14 +33,24 @@
 
 <script>
 export default {
-  name: 'Password',
+  name: "Password",
+  props: {
+    label: {
+      type: Boolean,
+      default: false,
+    },
+    labelText: {
+      type: String,
+      default: "请输入密码",
+    },
+  },
   data() {
     return {
-      username: '123456',
+      username: "123456",
       error: false,
 
       // 默认为 password
-      value_type: 'password',
+      value_type: "password",
       // 点击时修改颜色
       active: false,
     };
@@ -46,7 +58,7 @@ export default {
   methods: {
     // 切换输入框类型
     toggleType() {
-      this.value_type = this.value_type === 'password' ? 'text' : 'password';
+      this.value_type = this.value_type === "password" ? "text" : "password";
     },
   },
 };

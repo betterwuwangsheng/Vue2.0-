@@ -1,11 +1,17 @@
 <template>
-  <div id="app">pc 项目</div>
+  <div id="app">
+    <router-view />
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'App',
+  name: "App",
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+#app {
+  padding: 0 0 0 0;
+}
+</style>

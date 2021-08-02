@@ -6,7 +6,15 @@ import router from '@/router';
 import store from '@/store';
 import App from './App.vue';
 
+// vant
+import Vant from 'vant';
+import 'vant/lib/index.css';
+// svgicon
+import "@/icon";
+
 Vue.config.productionTip = false;
+
+Vue.use(Vant);
 
 new Vue({
   router,

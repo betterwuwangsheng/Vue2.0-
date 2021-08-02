@@ -4,9 +4,15 @@ import Vue from 'vue';
 // @ => src/
 import router from '@/router';
 import store from '@/store';
+import Vant from 'vant';
 import App from './App.vue';
 
+// Vant
+import 'vant/lib/index.css';
+
 Vue.config.productionTip = false;
+
+Vue.use(Vant);
 
 new Vue({
   router,

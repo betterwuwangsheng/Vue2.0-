@@ -1,5 +1,6 @@
 <template>
   <div class="form-item">
+    <label v-if="label" style="color: #fff">{{ labelText }}</label>
     <div class="form-body" :class="{ active: active }">
       <!-- @focus="" 获取焦点时事件 -->
       <van-field
@@ -15,15 +16,27 @@
 
 <script>
 export default {
-  name: 'Username',
+  name: "Username",
   data() {
     return {
-      username: '',
+      username: "",
       error: false,
 
       // 点击时修改颜色
       active: false,
     };
+  },
+
+  //标签上的参数
+  props: {
+    label: {
+      type: Boolean,
+      default: false,
+    },
+    labelText: {
+      type: String,
+      default: "请输入用户名",
+    },
   },
 };
 </script>

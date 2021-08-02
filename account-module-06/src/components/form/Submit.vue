@@ -2,22 +2,19 @@
   <div class="form-item">
     <!-- @focus="" 获取焦点时事件 -->
     <button
-      class="
-        button-ui button-ui-block button-ui-round button-ui-main button-ui-large
-      "
+      class="button-ui button-ui-block button-ui-round button-ui-main button-ui-large"
     >
-      <span>重置密码</span>
+      <slot></slot>
     </button>
   </div>
 </template>
-
 <script>
 export default {
-  name: 'Username',
+  name: "Username",
   props: {},
   data() {
     return {
-      username: '',
+      username: "",
       error: false,
 
       // 点击时修改颜色
